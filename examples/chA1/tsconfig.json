@@ -1,0 +1,16 @@
+{
+  "files": ["src/index.tsx"],
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es6",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "moduleResolution": "node",
+    "lib": ["dom", "ESNext"],
+    "esModuleInterop": true
+  }
+}

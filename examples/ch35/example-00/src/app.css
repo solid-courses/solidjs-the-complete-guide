@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 1rem;
+  background-color: #eee;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.pricing {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.pricing thead {
+  background-color: #f0f0f0;
+}
+
+.pricing th,
+.pricing td {
+  border: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.pricing th {
+  font-weight: bold;
+}
+
+.pricing tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.pricing tbody tr:hover {
+  background-color: #f1f9ff;
+}

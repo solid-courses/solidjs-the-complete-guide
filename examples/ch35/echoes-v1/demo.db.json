@@ -1,0 +1,157 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "salt": "ec456668629d3d53bc5ce46921d05218ab6412b368e450a27cb1136a8ed0d65a",
+      "passwordHash": "47169532eaab48f54d9bc2a2b2570f9688db64e69b5ec4544939989749e2f3e7465ce9e5faa4eb38c0d307ad5a3f3753b4f6b1019a3c24d87f465cd1aecc0268",
+      "id": "1755744699313om3790"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Oscar Wilde",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Maya Angelou"
+    },
+    {
+      "id": "3",
+      "name": "Albert Einstein"
+    },
+    {
+      "id": "4",
+      "name": "Jane Austen"
+    }
+  ],
+  "categories": [
+    {
+      "id": "0",
+      "name": "Humor",
+      "description": "Funny and witty quotes."
+    },
+    {
+      "id": "1",
+      "name": "Inspiration",
+      "description": "Quotes to inspire and motivate."
+    },
+    {
+      "id": "2",
+      "name": "Life",
+      "description": "Reflections on life and living."
+    }
+  ],
+  "quotes": [
+    {
+      "id": "2",
+      "user": "1755744699313om3790",
+      "author": "1",
+      "category": [
+        "0"
+      ],
+      "text": "I can resist everything except temptation."
+    },
+    {
+      "id": "3",
+      "user": "1755744699313om3790",
+      "author": "1",
+      "category": [
+        "1"
+      ],
+      "text": "Be yourself; everyone else is already taken."
+    },
+    {
+      "id": "4",
+      "user": "1755744699313om3790",
+      "author": "2",
+      "category": [
+        "1"
+      ],
+      "text": "You will face many defeats in life, but never let yourself be defeated."
+    },
+    {
+      "id": "5",
+      "user": "1755744699313om3790",
+      "author": "2",
+      "category": [
+        "2"
+      ],
+      "text": "Try to be a rainbow in someone's cloud."
+    },
+    {
+      "id": "6",
+      "user": "1755744699313om3790",
+      "author": "3",
+      "category": [
+        "1"
+      ],
+      "text": "Life is like riding a bicycle. To keep your balance, you must keep moving."
+    },
+    {
+      "id": "7",
+      "user": "1755744699313om3790",
+      "author": "3",
+      "category": [
+        "2"
+      ],
+      "text": "Imagination is more important than knowledge."
+    },
+    {
+      "id": "8",
+      "user": "1755744699313om3790",
+      "author": "4",
+      "category": [
+        "2"
+      ],
+      "text": "It isn't what we say or think that defines us, but what we do."
+    },
+    {
+      "id": "9",
+      "user": "1755744699313om3790",
+      "author": "4",
+      "category": [
+        "1"
+      ],
+      "text": "There is no charm equal to tenderness of heart."
+    },
+    {
+      "id": "11",
+      "user": "1755744699313om3790",
+      "author": "1",
+      "category": [
+        "0"
+      ],
+      "text": "Always forgive your enemies; nothing annoys them so much."
+    },
+    {
+      "id": "12",
+      "user": "1755744699313om3790",
+      "author": "2",
+      "category": [
+        "1"
+      ],
+      "text": "My mission in life is not merely to survive, but to thrive."
+    },
+    {
+      "id": "13",
+      "user": "1755744699313om3790",
+      "author": "3",
+      "category": [
+        "2"
+      ],
+      "text": "Strive not to be a success, but rather to be of value."
+    },
+    {
+      "id": "14",
+      "user": "1755744699313om3790",
+      "author": "4",
+      "category": [
+        "1"
+      ],
+      "text": "A woman is not fit to occupy the stage but to occupy a home."
+    }
+  ],
+  "sessions": []
+}

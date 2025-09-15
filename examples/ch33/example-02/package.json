@@ -1,0 +1,26 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node watch.js",
+    "build": "rollup -c rollup.config.js",
+    "serve": "cd dist && node server.entry.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.15.3",
+    "@types/express": "^5.0.3",
+    "babel-preset-solid": "^1.9.6",
+    "express": "^5.1.0",
+    "rollup": "^4.46.2",
+    "solid-js": "^1.9.7"
+  }
+}

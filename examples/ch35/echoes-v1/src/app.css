@@ -1,0 +1,442 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+:root {
+  --link-color: #008cff;
+  --link-color--hover: orange;
+  --link-color--active: orange;
+  --gap--global: 1rem;
+}
+
+html {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--link-color, #008cff);
+  line-height: 1;
+  padding: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-color--hover);
+}
+
+a.active {
+  color: var(--link-color--active);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  line-height: 1;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  outline: green; 
+}
+
+button:disabled {
+  color: white;
+}
+
+button:focus {
+  outline: 2px solid green;
+}
+
+#app {
+  isolation: isolate;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--gap--global, 1rem);
+}
+
+#app > header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  padding: var(--gap--global, 1rem);
+  background-color: #222;
+}
+
+#app > main {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--gap--global, 1rem);
+  padding-left: var(--gap--global, 1rem);
+  padding-right: var(--gap--global, 1rem);
+}
+
+#app > footer {
+  background-color: #222;
+  padding: var(--gap--global, 1rem);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav#main-menu,
+nav#user-menu {
+  display: flex;
+  align-items: center;
+  gap: var(--gap--global, 0.5rem);
+}
+
+#user-info {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+form#login,
+form#register {
+  --gap--global: 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--gap--global);
+}
+
+form#login > .form-group > label,
+form#register > .form-group > label {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--gap--global);
+}
+
+form#login > .form-group.error,
+form#register > .form-group.error {
+  color: red;
+}
+
+form#login > .form-group > label > span,
+form#register > .form-group > label > span {
+  min-width: 5rem;
+  display: inline-block;
+}
+
+form#login > .form-group > button,
+form#register > .form-group > button {
+  padding: 0.25em 0.5em;
+}
+
+form#login > .form-group > button:hover,
+form#register > .form-group > button:hover {
+  color: #ffffff;
+  background-color: var(--link-color, #008cff);
+}
+
+form#logout {
+  display: inline-block;
+}
+
+form#logout > button {
+  padding: 0.25em 0.5em;
+}
+
+form#logout > button:hover {
+  color: #ffffff;
+  background-color: var(--link-color, #008cff);
+}
+
+.quotes {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--gap--global, 1rem);
+}
+
+.quotes > blockquote {
+  background-color: #222;
+  margin: 0;
+  padding: var(--gap--global, 1rem);
+  border-radius: 3px;
+}
+
+.quotes > blockquote >.text {
+  font-style: italic;
+}
+
+.quotes > blockquote >.source {
+  text-align: right;
+}
+
+/**
+ * Pages with login requirement
+ */
+
+.user-header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: var(--gap--global);
+}
+
+.user-header > button {
+  padding: 0.25em 0.5em;
+  border-radius: 2px;
+}
+
+.user-header > button:hover {
+  color: #ffffff;
+  background-color: var(--link-color, #008cff);
+}
+
+.user-body > table {
+  width: auto;
+  border-collapse: collapse;
+}
+
+.user-body .col-actions button + button {
+  margin-left: 1rem;
+}
+
+/** Quotes Table **/
+
+.user-body > .quotes .col-check {
+  width: 1.75rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  text-align: left;
+}
+
+.user-body > .quotes .col-quote {
+  text-align: left;
+  width: auto;
+  padding-right: 0.5rem;
+}
+
+.user-body > .quotes .col-author {
+  text-align: left;
+  width: 10rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.user-body > .quotes .col-actions {
+  width: 8rem;
+}
+
+/** Authors Table **/
+
+.user-body > .authors .col-check {
+  width: 1.75rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  text-align: left;
+}
+
+.user-body > .authors .col-name {
+  text-align: left;
+  width: auto;
+  padding-right: 0.5rem;
+}
+
+.user-body > .authors .col-actions {
+  width: 7rem;
+}
+
+/**
+ * Notifications
+ */
+.notifications {
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  list-style: none;
+  padding: 0.5rem 2rem;
+  gap: 0.5rem;
+  z-index: 99;
+}
+
+.notification {
+  position: relative;
+  color: #000000;
+  transition: all 0.5s;
+  padding: 0.5rem;
+  gap: 0.25rem;
+}
+
+.notification > .title {
+  padding-right: 3rem;
+}
+
+.notification > .text {
+  color: inherit;
+}
+
+.notification > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.notification > button:hover {
+  color: #fff;
+  background-color: var(--link-color);
+}
+
+.notification.is-info {
+  color: #444;
+  border: 1px solid #91caff;
+  background-color: #e6f4ff;
+}
+
+.notification.is-error {
+  color: red;
+  border: 1px solid #ffccc7;
+  background-color: #000000;
+}
+
+.notification.is-warning {
+  color: orange;
+  border: 1px solid orange;
+  background-color: #fffbe6;
+}
+
+.notification.is-success {
+  color: green;
+  border: 1px solid #b7eb8f;
+  background-color: #f6ff;
+}
+
+/**
+ * Confirmations
+ */
+.confirmations-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-Index: 99;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.confirmations {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.confirmation {
+  position: absolute;
+  width: 100%;
+  max-width: 40rem;
+  padding: 0.5rem;
+  color: #fff;
+  border: 1px solid #006eff;
+  background: #000;
+  color: #f0f0f0;
+}
+
+.confirmation > .title {
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+.confirmation > .detail {
+  line-height:  1.1;
+  margin-top: 0.5rem;
+}
+
+.confirmation > .buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.25rem;
+  justify-content: flex-end;
+}
+
+.confirmation > .ok {
+  font-weight: bold;
+  padding: 0.25rem;
+  min-width: 3rem;
+  color: green;
+  background-color: white;
+}
+
+.confirmation > .cancel {
+  padding: 0.25rem;
+  min-width: 3rem;
+  color: red;
+  background-color: white;
+}
+
+/**
+ * Content Entry Forms
+ */
+.content-entry {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--gap--global);
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--gap--global);
+}
+
+.form-group.submit {
+  align-items: flex-start;
+}

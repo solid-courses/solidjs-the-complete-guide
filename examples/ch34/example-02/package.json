@@ -1,0 +1,22 @@
+{
+  "name": "example-02",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "serve": "vite preview --port 3000"
+  },
+  "devDependencies": {
+    "@solidjs/router": "^0.15.3",
+    "solid-js": "^1.9.7",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.5",
+    "vite-plugin-solid": "^2.11.7"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "solid-js-boilerplate",
+  "version": "1.0.0",
+  "description": "SolidJS playground",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack serve",
+    "build": "NODE_ENV=production webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "solid-js": "^1.9.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-typescript": "^7.27.1",
+    "@typescript-eslint/eslint-plugin": "^8.43.0",
+    "@typescript-eslint/parser": "^8.43.0",
+    "babel-loader": "^10.0.0",
+    "babel-preset-solid": "^1.9.9",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.35.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-no-unsanitized": "^4.1.4",
+    "html-webpack-plugin": "^5.6.4",
+    "solid-refresh": "^0.7.5",
+    "style-loader": "^4.0.0",
+    "typescript": "^5.9.2",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2",
+    "webpack-merge": "^6.0.1"
+  }
+}
